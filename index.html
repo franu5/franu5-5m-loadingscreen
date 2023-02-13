@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>franu5 loading</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <video playsinline autoplay muted loop id="video">
+      <source src="back/back.mp4" type="video/mp4">
+    </video>
+
+    
+
+    <main>
+      <section class="prozirno">
+        <div class="glavno">
+          <div class="user">
+            <img src ="avatars/franu5.gif" width=150 height="150" alt>
+          </div>
+
+          <div class="links">
+            <div class="link">
+              <img src="avatars/franu5.gif" width=90 height="90" alt>
+              <h2>franu5#3383</h2>
+            </div>
+
+            <div class="link">
+              <img src="avatars/franu5.gif" width=90 height="90" alt>
+              <h2>franu5#3383</h2>
+            </div>
+          
+            <div class="link">
+              <img src="avatars/franu5.gif" width=90 height="90" alt>
+              <h2>franu5#3383</h2>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="loader"></div>
+            <img src="ss" alt="" />
+          </div>
+        </section>
+        </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+
+    
+  </body>
+</html>
+<script src="js/script.js"></script>
+
+
+<audio id="Loading" autoplay >
+  <source src="music/music.mp3" type="audio/mp3">
+</audio>
+<script>
+var vid = document.getElementById("Loading");
+vid.volume = 0.10
+
+
+var play = true;
+var myAudio = document.getElementById("Loading");
+
+
+myAudio.volume = 0.5;
+
+
+function onKeyDown(event) {
+      switch (event.keyCode) {
+          case 32: //SpaceBar                    
+              if (play) {
+                  myAudio.pause();
+                  play = false;
+              } else {
+                  myAudio.play();
+                  play = true;
+              }
+              break;
+      }
+return false;
+}
+window.addEventListener("keydown", onKeyDown, false);
+
+
+
+</script>
+
+</body>
+</html>
